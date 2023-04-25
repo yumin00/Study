@@ -30,7 +30,7 @@
 6. registers
 - 속도가 빠르고 공간이 작아짐
 
-### cash 알고리즘
+### cache 알고리즘
 
 [hardware]
 
