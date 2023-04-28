@@ -79,5 +79,5 @@
 - 0부터 9까지의 배열을 모두 가져가기 때문에 메모리를 진짜 많이 먹음
 
 ## Sort Alrgorithm 문제 풀이
-- [버블 정렬 문제 풀이]()
-- 
+- [버블 정렬 문제 풀이](../algorithm/bubble_sort.go)
+- [선택 정렬 문제 풀이](../algorithm/selection_sort.go)
