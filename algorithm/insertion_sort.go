@@ -17,34 +17,31 @@ N개의 수가 주어졌을 때, 이를 오름차순으로 정렬하는 프로�
 */
 
 /*
-인접한 것들 끼리 비교해서 큰 값을 오른쪽으로 작은 값을 왼쪽으로
-한 번을 반복을 하면 맨 오른쪽에 제일 큰 값이 남음
-제일 큰 값을 제외하고 다시 반복
-시간 : n(n-1)/2 => O(n^2)
+- 두 번째 idx부터 시작
+- -1 idx와 비교해서 크면 오른쪽으로..
+- 시간(worst) : 오름차순으로 하고 싶은데, 내림차순으로 되어있는 경우 - n(n-1)/2 => O(n^2)
+- 시간(best) : O(n) - 뒤에를 먼저 만들어놓으면 끝까지 돌 필요가 없음 : 이미 한 것은 신경쓰지 말자 / 이미 정렬됐으면 보장하고 break
 */
 
 func main() {
-	var count int
+	var N int
 	r := bufio.NewReader(os.Stdin)
-	fmt.Fscanln(r, &count)
+	fmt.Fscanln(r, &N)
 
-	arr := make([]int, count)
-
-	for i := 0; i < count; i++ {
+	arr := make([]int, N)
+	for i := 0; i < N; i++ {
 		fmt.Fscan(r, &arr[i])
 	}
 
-	for i := 0; i < count-1; i++ {
-		minIndex := i
-		for j := i + 1; j < count; j++ {
-			if arr[minIndex] > arr[j] {
-				minIndex = j
+	for i := 0; i < N-1; i++ {
+		for j := i + 1; j > 0; j-- {
+			if arr[j] < arr[j-1] {
+				arr[j-1], arr[j] = arr[j], arr[j-1]
 			}
 		}
-		arr[i], arr[minIndex] = arr[minIndex], arr[i]
 	}
 
-	for i := 0; i < count; i++ {
+	for i := 0; i < N; i++ {
 		fmt.Println(arr[i])
 	}
 }
