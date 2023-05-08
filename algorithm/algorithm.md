@@ -82,3 +82,16 @@
 - [버블 정렬 문제 풀이](../algorithm/bubble_sort.go)
 - [선택 정렬 문제 풀이](../algorithm/selection_sort.go)
 - [삽입 정렬 문제 풀이](../algorithm/insertion_sort.go)
+- [병합 정렬 문제 풀이](../algorithm/merge_sort.go)
+
+## Dynamic Programming (동적 프로그래밍)
+
+
+## Greedy Algrorithm
+- 가장 최적의 수를 찾는다
+- ex) 790원을 가장 적은 동전으로 나눠라 
+- (예제) no.jam2839
+
+## Brute force Alrgorithm
+- 무식하게 전부 다 돌아야한다
+- (예제) no.jam1018

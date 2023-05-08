@@ -40,7 +40,7 @@ cpu - cache - main memory
 
 cpu - memory - disk
 
---> cash 알고리즘 = 캐싱한다
+--> cache 알고리즘 = 캐싱한다
 
 
 - 네트워크와의 입출력(remote secondary storage) 없이 내 메모리(main memory에서 꺼내서 준다 => 속도가 훨씬 빠름
@@ -81,4 +81,5 @@ hit(아주 빠름) : cache에 있는 것을 뱉어주는 것
 강력 캐쉬 비우기 : flush
 
 2. (빈도수 기준) : 가장 조금 참조된 것을 뺀다
+
 

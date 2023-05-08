@@ -39,7 +39,8 @@ for문 하나를 도는 시간 : n
 A의 length가 커지면 커질수록 n도 커짐
 
 A배열 안에 값을 넣는 것은 상수시간
--> a배열 안에 값을 넣으려면 index와 size를 알아야함!
+
+-> A배열 안에 값을 넣으려면 index와 size를 알아야함!
 
 ** append : index를 모를 때 append를 사용할 수 있음 / 가상으로 capacity를 만들고(마지막 index 값을 찾음 = O(n)), 값을 넣음(=O(1))-> 시간이 엄청 느림
 -> O(n) * O(1) = O(n) 시간이 걸림
@@ -67,13 +68,13 @@ type LinkedList struture {
 
 대부분의 배열은 크기를 모른다 -> len으로 배열의 크기를 정해줘야함.
 
-Linked list에 값을 inser하는 것은 tail 맨 뒤에 넣어야함.
+Linked list에 값을 insert하는 것은 tail 맨 뒤에 넣어야함.
 
 linked list에 값을 insert하는 시간 : O(n) (=tail을 찾는 시간) * O(1) (tail 뒤에 새로운 값을 넣는 시간)
 
 - example : 순서가 있는 경우 / 갤러리 사진 삭제 / alt tab
 
-double linked list? 양방향으로된 linked list를 사용하면 head와 tail을 구분짓지 않기 때문에 더 짧게 사용할 수 있음
+double linked list? 양방향으로 된 linked list를 사용하면 head와 tail을 구분짓지 않기 때문에 더 짧게 사용할 수 있음
 
 ## 3. Stack
 
@@ -118,7 +119,7 @@ first in first out
 
 ## 6. Graph
 
-![img_2](https://user-images.githubusercontent.com/119022905/233975166-2100b446-8c90-4410-974f-fba73e4672e3.png)
+![img_2](https://user-images.githubusercontent.com/130362583/235656618-b7061313-3d93-4ccc-bc5b-a3293b8bba03.png)
 
 [[Directed Graph]]
 - 각 원 : node / vertex
