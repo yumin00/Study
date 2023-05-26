@@ -83,6 +83,7 @@
 - [선택 정렬 문제 풀이](../algorithm/selection_sort.go)
 - [삽입 정렬 문제 풀이](../algorithm/insertion_sort.go)
 - [병합 정렬 문제 풀이](../algorithm/merge_sort.go)
+- [힙 정렬 문제 풀이](../algorithm)
 
 ## Dynamic Programming (동적 프로그래밍)
 
